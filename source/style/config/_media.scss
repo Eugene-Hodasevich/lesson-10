@@ -6,6 +6,7 @@
     header {
         width: calc(100vw - 70px);
     }
+    
 }
 
 @media (max-width: 1000px) {
@@ -19,6 +20,15 @@
 
     .header__box {
         width: 33vw;
+        
+        .header__name {
+            font-size: $largeText;
+        }
+
+        .header__additional {
+            font-size: $middleText;
+        }
+
         .header__link {
             width: 16.7vw;
             height: 16.7vw;
@@ -28,7 +38,7 @@
     .header__box:nth-child(2) {
         position: absolute;
         top: 15px;
-        left: 25%;
+        left: 30%;
         
         order: -2;
 
@@ -80,9 +90,8 @@
         justify-content: space-between;
         width: 100%;
         order: -3;
-    } 
-
-    .header__name {
-        font-size: 30px;
     }
+    
 }
+
+
