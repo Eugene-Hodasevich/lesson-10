@@ -15,32 +15,38 @@ header {
     align-self: center;
     justify-content: center;
     flex-grow: 1;
-    
+
     background: saddlebrown;
-    
 
     .header__link {
         width: 70px;
-        height: 70px;                   /*надо переделать бордерыs*/
-        
-        background-color: white;
-        border: 1px solid gray;
-        border-top: none;
-        border-left: none;
+        height: 70px;
     }
 
+    .header__link--dots,
+    .header__link--folder,
+    .header__link--settings {
+        background-color: white;
+        border-right: 1px solid gray;
+    }
 
+    .header__link--download,
+    .header__link--letter,
+    .header__link--earth {
+        background-color: white;
+        border-left: 1px solid gray;
+    }
 
     form {
         position: relative;
     }
 
     input {
-        width: 300px;
+        width: 260px;
         height: 35px;
         padding-left: 10px;
 
-        font-family: Lato-Regular,AdobeInvisFont,MyriadPro-Regular;
+        font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
 
         border-radius: 30px;
         background: #e8e8e8;
@@ -53,24 +59,59 @@ header {
 
         height: 35px;
         width: 35px;
-        
+
         background: url(../img/header/zoom.png) no-repeat center center;
-      }
+    }
 
     span {
-        display: block;        
+        display: block;
         margin: 5px;
     }
 
     .header__name {
         font-size: $middleText;
         text-transform: capitalize;
-    }
-   
-    .header__additional {
-        font-size: $tinyText;
+        @include gradientText;
     }
 
+    .header__additional {
+        font-size: $smallText;
+        @include subtleText;
+    }
+
+    .burger {
+        position: relative;
+        top: 33px;
+        left: 10px;
+
+        display: none;
+        width: 25px;
+        height: 2px;
+
+        background: black;
+    }
+
+    .burger::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+
+        width: 25px;
+        height: 2px;
+
+        background: black;
+    }
+
+    .burger::after {
+        content: '';
+        position: absolute;
+        bottom: 10px;
+
+        width: 25px;
+        height: 2px;
+
+        background: black;
+    }
 }
 
 .header__box:nth-child(2) {
@@ -79,25 +120,20 @@ header {
     background: saddlebrown;
     flex-grow: 1000;
 }
-@include scrolCustom;
 
 .daily {
     display: flex;
     width: 100%;
     height: 100px;
-    
+
     background-color: green;
 
-    overflow-x: scroll;
+   
 
     &__box {
         display: flex;
         width: 1300px;
-        
-        
-        
     }
-    
 
     &__inner {
         width: 162px;
@@ -108,13 +144,14 @@ header {
 
         span {
             display: block;
-            
+
             font-size: 20px;
         }
 
         span:nth-child(1) {
-            margin-top: 17px;
+            margin-top: 21px;
             font-size: $smallText;
+            @include boldText;
         }
 
         span:nth-child(2) {
@@ -128,13 +165,11 @@ header {
             display: inline;
             margin-left: 10px;
             font-size: $smallText;
-            
-            font-weight: bold;
-            color: yellow;
+            @include subtleText;
         }
 
         .daily__inner__numbers--blue:before {
-            content: '';
+            content: "";
             position: absolute;
             bottom: 0px;
             right: 22px;
@@ -148,7 +183,7 @@ header {
         }
 
         .daily__inner__numbers--red:before {
-            content: '';
+            content: "";
             position: absolute;
             bottom: 0px;
             right: 22px;
@@ -159,6 +194,12 @@ header {
             border-left: 3px solid transparent;
             border-right: 3px solid transparent;
             border-top: 5px solid red;
+        }
+
+        .daily__inner__add {
+            font-size: $smallText;
+            padding-top: 23px;
+            @include gradientText;
         }
     }
 }

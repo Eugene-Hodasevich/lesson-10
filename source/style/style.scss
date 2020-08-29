@@ -3,12 +3,14 @@
 @import "./config/mixins";
 @import "./components/nav";
 @import "./components/header";
-
+@import "./components/main";
+@include scrolCustom;
 
 
 .wrapper {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     width: 1370px;
     min-height: 100vh;
     margin: auto;
@@ -16,12 +18,10 @@
     background: blue;
 }
 
-.container {
-    width: 100%;
-}
 
 
 
 
+@import "./config/media";
 @import "./config/media";
 

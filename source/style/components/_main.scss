@@ -1,0 +1,143 @@
+.container__main-aside {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 100%;
+    height: 800px;
+    background: coral;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: space-evenly;
+    padding: calc(0.25vw + 5px);
+
+    background: #e2e2e2;
+    
+}
+
+.main__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    // justify-content: space-evenly;
+    
+    .main__monthly {
+        position: relative;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 400px;
+        height: 260px;
+        margin: calc(0.25vw + 5px);
+        padding: 1.5vw;
+        padding-left: 0;
+        background: white;
+        flex-grow: 10;
+        overflow-x: scroll;
+
+
+        span {
+            position: sticky;
+            left: 10px;
+            @include boldText;
+        }
+
+        form {
+            position: sticky;
+            left: 220px;
+            width: 212px;
+
+            button {
+                width: 68px;
+                border-radius: 20px;
+                background: none;
+                @include subtleText;
+                font-weight: 700;
+            }
+
+            button:hover {
+                background: linear-gradient(-90deg, #ec7159, #f50a35) ;
+                color: white;
+            }
+        }
+
+    } 
+
+    .main__per-hour {
+        width: 250px;
+        height: 260px;
+        margin: calc(0.25vw + 5px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+
+        background: white;
+
+        span {
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            @include boldText;
+        }
+
+        div {
+            width: 100%;
+            text-align: center;
+            span {
+                position: relative;
+                font-size: $smallText;
+                @include subtleText;
+            }
+
+            .main__per-hour--blue:before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                right: 32px;
+                width: 0px;
+                height: 0px;
+                margin: 5px;
+    
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent;
+                border-bottom: 5px solid blue;
+            }
+    
+            .main__per-hour--red:before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                right: 32px;
+                width: 0px;
+                height: 0px;
+                margin: 5px;
+    
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent;
+                border-top: 5px solid red;
+            }
+        }
+    }
+}
+
+.main__box:nth-child(2) {
+    width: 50%;
+    height: 300px;
+    background: white;
+    margin: calc(0.25vw + 5px);
+    flex-grow: 1;
+}
+
+.main__box:nth-child(3) {
+    width: 50%;
+    height: 300px;
+    background: white;
+    margin: calc(0.25vw + 5px);
+    flex-grow: 1;
+}

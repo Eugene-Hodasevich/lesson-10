@@ -6,6 +6,8 @@
 }
 
 @mixin scrolCustom {
+
+    /*=================Daily scroll=================*/
     .daily::-webkit-scrollbar {
         width: 10px;
         height: 10px;
@@ -17,12 +19,12 @@
         background-color: #999;
     }
     .daily::-webkit-scrollbar-track-piece {
-        background-color: #ffffff;
+        background-color: #c5bebed7;
         border-radius: 20px;
     }
     .daily::-webkit-scrollbar-thumb {
         height: 100px;
-        background-color: rgb(66, 64, 64);
+        background-color: rgb(44, 43, 43);
         border-radius: 7px;
     }
     .daily::-webkit-scrollbar-corner {
@@ -31,6 +33,34 @@
     .daily::-webkit-resizer {
         background-color: #666;
     }
+    /*=================Monthly scroll=================*/
+    .main__monthly::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    .main__monthly::-webkit-scrollbar-button {
+        display: none;
+    }
+    .main__monthly::-webkit-scrollbar-track {
+        background-color: #999;
+    }
+    .main__monthly::-webkit-scrollbar-track-piece {
+        background-color: #c5bebed7;
+        border-radius: 20px;
+    }
+    .main__monthly::-webkit-scrollbar-thumb {
+        height: 100px;
+        background-color: rgb(44, 43, 43);
+        border-radius: 7px;
+    }
+    .main__monthly::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+    .main__monthly::-webkit-resizer {
+        background-color: #666;
+    }
+
+    
 }
 
 @mixin gradientText {
@@ -39,14 +69,16 @@
     -webkit-text-fill-color: transparent;
 }
 
+@mixin boldText {
+    font-style: Lato-Bold,AdobeInvisFont,MyriadPro-Regular;
+    color: $paleDark;
+    font-size: $middleText;
+    font-weight: 700;
+}
 
+@mixin subtleText {
+    font-style: Lato-Regular,AdobeInvisFont,MyriadPro-Regular;
+    color: $paleGray;
+    font-weight: 400;
+}
 
-/*$maxWidth: 1280;
-
- 
- @mixin adaptiv-font($pcSize, $mobSize) {
-  $addSize: $pcSize - $mobSize;
-  $maxWidth: $maxWidth - 320;
-  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
- }
-*/
