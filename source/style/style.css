@@ -602,7 +602,7 @@ main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background: #e2e2e2;
+  background: #fcfcfc;
   padding: 20px;
 }
 
@@ -628,7 +628,7 @@ main {
 .main__box .list__internal li {
   padding: 20px;
   margin: 10px 0 10px 0;
-  background: #e2e2e2;
+  background: #fcfcfc;
 }
 
 .main__box .list__internal::before {
