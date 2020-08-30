@@ -26,7 +26,7 @@
         @include navText;
     }
 
-    &__link::after {
+    &__link--hover::after {
         content: "";
         position: absolute;
         z-index: 1;
@@ -36,11 +36,11 @@
 
         width: 10px;
         height: 10px;
-        background: linear-gradient(#f37257, #fd5271);
+        background: #fc705e;
         transform: rotate(45deg);
     }
 
-    &__link:hover {
+    &__link--hover:hover {
         &::after {
             display: block;
         }
