@@ -15,8 +15,8 @@
         display: none;
     }
     .daily::-webkit-scrollbar-track {
-        background-color: #999;
-    }
+        background-color: #999;                     /*=================Sass don't like the way I customized the scrollbar :(=================*/
+    }                                                 /*=================I think I could have done it shorter, but rn I found only this way of customizing=================*/
     .daily::-webkit-scrollbar-track-piece {
         background-color: #c5bebed7;
         border-radius: 20px;
@@ -29,9 +29,7 @@
     .daily::-webkit-scrollbar-corner {
         background-color: #999;
     }
-    .daily::-webkit-resizer {
-        background-color: #666;
-    }
+
     /*=================Monthly scroll=================*/
     .main__monthly::-webkit-scrollbar {
         width: 10px;
@@ -55,9 +53,7 @@
     .main__monthly::-webkit-scrollbar-corner {
         background-color: #999;
     }
-    .main__monthly::-webkit-resizer {
-        background-color: #666;
-    }
+
     /*=================Customers feed scroll=================*/
     .main__box::-webkit-scrollbar {
         width: 10px;
@@ -81,9 +77,7 @@
     .main__box::-webkit-scrollbar-corner {
         background-color: #999;
     }
-    .main__box::-webkit-resizer {
-        background-color: #666;
-    }
+
 }
     /*====================Text====================*/
 @mixin gradientText {
