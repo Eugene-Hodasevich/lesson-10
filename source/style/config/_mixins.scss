@@ -59,6 +59,32 @@
     .main__monthly::-webkit-resizer {
         background-color: #666;
     }
+    /*=================Customers feed scroll=================*/
+    .main__box::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    .main__box::-webkit-scrollbar-button {
+        display: none;
+    }
+    .main__box::-webkit-scrollbar-track {
+        background-color: #999;
+    }
+    .main__box::-webkit-scrollbar-track-piece {
+        background-color: #c5bebed7;
+        border-radius: 20px;
+    }
+    .main__box::-webkit-scrollbar-thumb {
+        height: 100px;
+        background-color: rgb(44, 43, 43);
+        border-radius: 7px;
+    }
+    .main__box::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+    .main__box::-webkit-resizer {
+        background-color: #666;
+    }
 
     
 }
