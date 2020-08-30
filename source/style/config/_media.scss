@@ -12,6 +12,7 @@
 
         span:nth-child(1) {
             margin-top: 17px;
+
             font-size: $smallText;
         }
     }
@@ -62,6 +63,7 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         width: 100%;
+
         order: -3;
     }
 
@@ -96,6 +98,7 @@
 
     .header__box {
         width: 50vw;
+
         .header__link {
             width: 10.7vw;
             height: 9.7vw;
@@ -105,8 +108,10 @@
 
     .header__box:nth-child(2) {
         position: unset;
-        order: -2;
+
         width: 100%;
+
+        order: -2;
     }
 
     .header__box:nth-child(4) {
@@ -114,6 +119,7 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         width: 100%;
+        
         order: -3;
     }
 }
