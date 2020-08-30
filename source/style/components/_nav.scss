@@ -2,12 +2,11 @@
     height: 100%;
     position: relative;
     flex-direction: column;
-    
-
-    background: burlywood;
 }
 
 .navigation {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     width: 70px;
@@ -17,6 +16,8 @@
     background: linear-gradient(#f37257, #fd5271);
 
     &__link {
+        position: relative;
+        z-index: 3;
         width: 100%;
         height: 70px;
         padding-top: 60px;
@@ -24,6 +25,27 @@
         text-align: center;
         @include navText;
     }
+    
+    &__link::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 32px;
+        right: -5px;
+        display: none;
+        
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(#f37257, #fd5271);
+        transform: rotate(45deg);
+    }
+
+    &__link:hover{
+        &::after{
+            display: block;
+        }
+    }
+
 
     .navigation__link:nth-child(1) {
         box-shadow: 5px 0px 5px #6458583f;

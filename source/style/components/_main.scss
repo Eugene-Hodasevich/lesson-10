@@ -14,6 +14,8 @@ main {
     padding: calc(0.25vw + 5px);
 
     background: #e2e2e2;
+
+
 }
 
 .main__box {
@@ -175,6 +177,11 @@ main {
         .list__header {
             width: 100%;
             margin: 10px;
+
+            @include boldText;
+            font-size: $middleText;
+
+
         }
 
         .list__img {
@@ -202,8 +209,11 @@ main {
             background: #e2e2e2;
             padding: 20px;
         }
+    }
 
 
+    .li__name {
+        font-weight: 700;
     }
 
     .list__internal {
