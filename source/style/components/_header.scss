@@ -6,6 +6,7 @@ header {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+
     border-bottom: 1px solid $paleGray;
 }
 
@@ -90,6 +91,7 @@ header {
 
     .burger::before {
         content: "";
+
         position: absolute;
         top: 10px;
 
@@ -101,6 +103,7 @@ header {
 
     .burger::after {
         content: "";
+
         position: absolute;
         bottom: 10px;
 
@@ -130,7 +133,6 @@ header {
     &__inner {
         width: 162px;
         height: 100%;
-
         padding-left: 40px;
 
         span {
@@ -141,6 +143,7 @@ header {
 
         span:nth-child(1) {
             margin-top: 21px;
+
             font-size: $smallText;
             @include boldText;
         }
@@ -153,17 +156,21 @@ header {
 
         .daily__inner__numbers {
             position: relative;
+
             display: inline;
             margin-left: 10px;
+
             font-size: $smallText;
             @include subtleText;
         }
 
         .daily__inner__numbers--blue:before {
             content: "";
+
             position: absolute;
             bottom: 0px;
             right: 22px;
+
             width: 0px;
             height: 0px;
             margin: 5px;
@@ -175,9 +182,11 @@ header {
 
         .daily__inner__numbers--red:before {
             content: "";
+
             position: absolute;
             bottom: 0px;
             right: 22px;
+
             width: 0px;
             height: 0px;
             margin: 5px;
@@ -188,8 +197,9 @@ header {
         }
 
         .daily__inner__add {
-            font-size: $smallText;
             padding-top: 23px;
+
+            font-size: $smallText;
             @include gradientText;
         }
     }

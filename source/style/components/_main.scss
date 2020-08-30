@@ -30,17 +30,18 @@ main {
         flex-wrap: wrap;
         justify-content: space-between;
         width: 400px;
-
         margin: calc(0.25vw + 5px);
         padding: 1.5vw;
         padding-left: 0;
-        background: white;
         flex-grow: 10;
+
+        background: white;
         overflow-x: auto;
 
         span {
             position: sticky;
             left: 10px;
+
             @include boldText;
         }
 
@@ -51,10 +52,12 @@ main {
 
             button {
                 width: 68px;
-                border-radius: 20px;
-                background: none;
+
                 @include subtleText;
                 font-weight: 700;
+
+                border-radius: 20px;
+                background: none;
             }
 
             button:hover {
@@ -77,26 +80,31 @@ main {
         background: white;
 
         span {
-            text-align: center;
             width: 100%;
             padding: 10px;
+
+            text-align: center;
             @include boldText;
         }
 
         div {
             width: 100%;
             text-align: center;
+
             span {
                 position: relative;
+
                 font-size: $smallText;
                 @include subtleText;
             }
 
             .main__per-hour--blue:before {
                 content: "";
+
                 position: absolute;
                 top: 10px;
                 right: 32px;
+
                 width: 0px;
                 height: 0px;
                 margin: 5px;
@@ -108,9 +116,11 @@ main {
 
             .main__per-hour--red:before {
                 content: "";
+
                 position: absolute;
                 top: 10px;
                 right: 32px;
+
                 width: 0px;
                 height: 0px;
                 margin: 5px;
@@ -129,6 +139,7 @@ main {
     height: 500px;
     margin: calc(0.25vw + 5px);
     flex-grow: 1;
+
     overflow-y: scroll;
 
     background: white;
@@ -137,9 +148,10 @@ main {
 .main__box:nth-child(3) {
     width: 40%;
     height: 500px;
-    background: #e2e2e2;
     margin: calc(0.25vw + 5px);
     flex-grow: 1;
+
+    background: #e2e2e2;
 }
 /*===========Second box with customers feed=========*/
 .main__box {
@@ -180,10 +192,12 @@ main {
 
         .list__img {
             position: relative;
+
             width: 45px;
             height: 45px;
-            overflow: hidden;
             margin: 0 10px 0 10px;
+
+            overflow: hidden;
 
             .img__sophie-turner {
                 position: absolute;
@@ -199,8 +213,9 @@ main {
         .li__external {
             width: 10%;
             flex-grow: 1;
-            background: $subtleGray;
             padding: 20px;
+
+            background: $subtleGray;
         }
     }
 
@@ -210,9 +225,9 @@ main {
 
     .list__internal {
         position: relative;
-        justify-content: flex-end;
 
         display: flex;
+        justify-content: flex-end;
         flex-wrap: wrap;
         margin-left: 40px;
         width: 90%;
@@ -222,17 +237,21 @@ main {
         li {
             padding: 20px;
             margin: 10px 0 10px 0;
+
             background: $subtleGray;
         }
     }
 
     .list__internal::before {
         content: "";
-        width: 2px;
-        height: 180px;
+
         position: absolute;
         top: 20px;
         left: -10px;
+
+        width: 2px;
+        height: 180px;
+
         background: #e2e2e2;
     }
 }
@@ -263,13 +282,16 @@ main {
     width: 40%;
     height: 235px;
     flex-grow: 1;
-    background: white;
     margin-top: calc(0.25vw + 5px);
     margin-right: calc(0.25vw + 5px);
+
+    background: white;
+
 
     .progress__header {
         margin: 20px 0px 0px;
         width: 100%;
+
         text-align: center;
     }
 
@@ -280,16 +302,18 @@ main {
         width: 100%;
 
         span {
-            margin: 5px;
             position: relative;
+
+            margin: 5px;
         }
 
         .progress__income {
             width: 100%;
+            margin: 5px;
+
             text-align: center;
             @include gradientText;
             font-size: $largeText;
-            margin: 5px;
         }
     }
 
@@ -300,9 +324,11 @@ main {
 
     .progress__numbers__inner--blue:before {
         content: "";
+
         position: absolute;
         bottom: 0px;
         right: 22px;
+
         width: 0px;
         height: 0px;
         margin: 5px;
@@ -314,9 +340,11 @@ main {
 
     .progress__numbers__inner--red:before {
         content: "";
+
         position: absolute;
         bottom: 0px;
         right: 22px;
+
         width: 0px;
         height: 0px;
         margin: 5px;
@@ -334,9 +362,10 @@ main {
     width: 40%;
     height: 235px;
     flex-grow: 1;
-    background: white;
     margin-top: calc(0.25vw + 5px);
     margin-left: calc(0.25vw + 5px);
+
+    background: white;
 
     .shipment__header {
         margin: 20px 0px 15px;
@@ -349,8 +378,9 @@ main {
         margin-top: 15px;
 
         span {
-            margin: 5px;
             position: relative;
+
+            margin: 5px;
         }
 
         .shipment__income {
@@ -360,16 +390,19 @@ main {
     }
 
     .shipment__numbers__inner {
+        margin: 5px;
+
         @include subtleText;
         font-size: $smallText;
-        margin: 5px;
     }
 
     .shipment__numbers__inner--blue:before {
         content: "";
+
         position: absolute;
         bottom: 0px;
         right: 22px;
+
         width: 0px;
         height: 0px;
         margin: 5px;
@@ -381,9 +414,11 @@ main {
 
     .shipment__numbers__inner--red:before {
         content: "";
+
         position: absolute;
         bottom: 0px;
         right: 22px;
+        
         width: 0px;
         height: 0px;
         margin: 5px;
