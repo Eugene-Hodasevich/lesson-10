@@ -48,7 +48,7 @@
 }
 
 .navigation__link::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: 32px;
@@ -185,7 +185,7 @@ header {
 
 .header__box .header__additional {
   font-size: 12px;
-  font-style: Lato-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-style: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
   color: #BFBFBF;
   font-weight: 400;
 }
@@ -201,7 +201,7 @@ header {
 }
 
 .header__box .burger::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   width: 25px;
@@ -210,7 +210,7 @@ header {
 }
 
 .header__box .burger::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 10px;
   width: 25px;
@@ -259,7 +259,7 @@ header {
 .daily__inner span:nth-child(1) {
   margin-top: 21px;
   font-size: 12px;
-  font-style: Lato-Bold,AdobeInvisFont,MyriadPro-Regular;
+  font-style: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
   color: #777777;
   font-size: 14px;
   font-weight: 700;
@@ -279,7 +279,7 @@ header {
   display: inline;
   margin-left: 10px;
   font-size: 12px;
-  font-style: Lato-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-style: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
   color: #BFBFBF;
   font-weight: 400;
 }
@@ -407,7 +407,7 @@ main {
   position: -webkit-sticky;
   position: sticky;
   left: 10px;
-  font-style: Lato-Bold,AdobeInvisFont,MyriadPro-Regular;
+  font-style: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
   color: #777777;
   font-size: 14px;
   font-weight: 700;
@@ -424,7 +424,7 @@ main {
   width: 68px;
   border-radius: 20px;
   background: none;
-  font-style: Lato-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-style: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
   color: #BFBFBF;
   font-weight: 400;
   font-weight: 700;
@@ -461,7 +461,7 @@ main {
   text-align: center;
   width: 100%;
   padding: 10px;
-  font-style: Lato-Bold,AdobeInvisFont,MyriadPro-Regular;
+  font-style: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
   color: #777777;
   font-size: 14px;
   font-weight: 700;
@@ -475,7 +475,7 @@ main {
 .main__box .main__per-hour div span {
   position: relative;
   font-size: 12px;
-  font-style: Lato-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-style: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
   color: #BFBFBF;
   font-weight: 400;
 }
@@ -566,7 +566,7 @@ main {
 .main__box .list__external .list__header {
   width: 100%;
   margin: 10px;
-  font-style: Lato-Bold,AdobeInvisFont,MyriadPro-Regular;
+  font-style: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
   color: #777777;
   font-size: 14px;
   font-weight: 700;
@@ -626,7 +626,7 @@ main {
 }
 
 .main__box .list__internal::before {
-  content: '';
+  content: "";
   width: 2px;
   height: 180px;
   position: absolute;
@@ -717,7 +717,7 @@ main {
 }
 
 .main__progress .progress__numbers__inner {
-  font-style: Lato-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-style: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
   color: #BFBFBF;
   font-weight: 400;
   font-size: 12px;
@@ -797,7 +797,7 @@ main {
 }
 
 .main__shipment .shipment__numbers__inner {
-  font-style: Lato-Regular,AdobeInvisFont,MyriadPro-Regular;
+  font-style: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
   color: #BFBFBF;
   font-weight: 400;
   font-size: 12px;

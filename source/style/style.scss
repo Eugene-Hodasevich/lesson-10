@@ -6,7 +6,6 @@
 @import "./components/main";
 @include scrolCustom;
 
-
 .wrapper {
     display: flex;
     justify-content: flex-start;
@@ -15,10 +14,4 @@
     margin: auto;
 }
 
-
-
-
-
 @import "./config/media";
-
-

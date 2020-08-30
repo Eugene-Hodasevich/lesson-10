@@ -12,7 +12,7 @@
     width: 70px;
     min-height: 100vh;
     height: 100%;
-    
+
     background: linear-gradient(#f37257, #fd5271);
 
     &__link {
@@ -25,59 +25,58 @@
         text-align: center;
         @include navText;
     }
-    
+
     &__link::after {
-        content: '';
+        content: "";
         position: absolute;
         z-index: 1;
         top: 32px;
         right: -5px;
         display: none;
-        
+
         width: 10px;
         height: 10px;
         background: linear-gradient(#f37257, #fd5271);
         transform: rotate(45deg);
     }
 
-    &__link:hover{
-        &::after{
+    &__link:hover {
+        &::after {
             display: block;
         }
     }
-
 
     .navigation__link:nth-child(1) {
         box-shadow: 5px 0px 5px #6458583f;
         background: url(../img/nav/logo.png) no-repeat center center;
         background-color: white;
     }
-    
+
     .navigation__link:nth-child(2) {
         background: url(../img/nav/home.png) no-repeat center center;
     }
-    
+
     .navigation__link:nth-child(3) {
         background: url(../img/nav/statistics.png) no-repeat center center;
     }
-    
+
     .navigation__link:nth-child(4) {
         background: url(../img/nav/users.png) no-repeat center center;
     }
-    
+
     .navigation__link:nth-child(5) {
         background: url(../img/nav/settings.png) no-repeat center center;
     }
-    
+
     .navigation__link:nth-child(6) {
         background: url(../img/nav/quires.png) no-repeat center center;
     }
-    
+
     .navigation__link:nth-child(7) {
         position: absolute;
         bottom: 0;
         left: 0;
-        
+
         background: url(../img/nav/power.png) no-repeat center center;
     }
 }

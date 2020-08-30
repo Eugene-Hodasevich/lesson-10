@@ -6,7 +6,6 @@
 }
 
 @mixin scrolCustom {
-
     /*=================Daily scroll=================*/
     .daily::-webkit-scrollbar {
         width: 10px;
@@ -85,26 +84,23 @@
     .main__box::-webkit-resizer {
         background-color: #666;
     }
-
-    
 }
 
 @mixin gradientText {
-    background: linear-gradient(90deg,#ec7159, #f50a35);
+    background: linear-gradient(90deg, #ec7159, #f50a35);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 @mixin boldText {
-    font-style: Lato-Bold,AdobeInvisFont,MyriadPro-Regular;
+    font-style: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
     color: $paleDark;
     font-size: $middleText;
     font-weight: 700;
 }
 
 @mixin subtleText {
-    font-style: Lato-Regular,AdobeInvisFont,MyriadPro-Regular;
+    font-style: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
     color: $paleGray;
     font-weight: 400;
 }
-
