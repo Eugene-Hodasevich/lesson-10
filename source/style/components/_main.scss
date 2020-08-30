@@ -15,7 +15,7 @@ main {
 
     background: #e2e2e2;
 }
-
+/*===========First box which contains monthly progress and revenue per hour=========*/
 .main__box {
     display: flex;
     flex-wrap: wrap;
@@ -122,6 +122,7 @@ main {
         }
     }
 }
+/*===========The end of the first box, describing of big box sizes=========*/
 
 .main__box:nth-child(2) {
     width: 40%;
@@ -140,7 +141,7 @@ main {
     margin: calc(0.25vw + 5px);
     flex-grow: 1;
 }
-
+/*===========Second box with customers feed=========*/
 .main__box {
     .list__external {
         display: flex;
@@ -235,7 +236,7 @@ main {
         background: #e2e2e2;
     }
 }
-
+/*===========Third box=========*/
 .main__inner {
     display: flex;
     justify-content: space-evenly;

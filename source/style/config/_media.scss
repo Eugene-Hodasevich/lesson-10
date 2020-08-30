@@ -69,7 +69,6 @@
         font-size: 30px;
     }
     /*====================Main====================*/
-
     main {
         width: 100%;
     }
@@ -86,10 +85,11 @@
 }
 
 @media (max-width: 767px) {
+    /*====================Navigation====================*/
     .container__nav {
         display: none;
     }
-
+    /*====================Header====================*/
     header {
         width: 100vw;
     }

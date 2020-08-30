@@ -85,7 +85,7 @@
         background-color: #666;
     }
 }
-
+    /*====================Text====================*/
 @mixin gradientText {
     background: linear-gradient(90deg, #ec7159, #f50a35);
     -webkit-background-clip: text;
