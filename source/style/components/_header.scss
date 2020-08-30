@@ -196,7 +196,7 @@ header {
 }
 
 .header__link--dots {
-    background: url(../img/header/dots.png) no-repeat center;
+    background: url(../img/header/dots.PNG) no-repeat center;   /*It's okay on my PC, but it looks like github don't want to read PNG spelled with uppercase :(*/
 }
 
 .header__link--folder {
